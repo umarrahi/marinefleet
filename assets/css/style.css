@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ------ Fonts -----  */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+/* ------ Root Color ------- */
+:root {
+    --white: #ffffff;
+    --blue-modern: #233657;
+    /* --blue-modern: rgb(35, 54, 87); */
+    --body-bg: #f5f7fb8e;
+    --light-brown: #e7681ef6;
+    --section-bg: #c8d4e95b;
+}
+
+
+/* ====== Global CSS ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--body-bg) !important;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+a, button {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.mybtn {
+    padding: 12px 35px;
+    background: var(--blue-modern);
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all .25 ease-in;
+}
+
+.mybtn:hover {
+    background: var(--blue-modern);
+    color: var(--white);
+    box-shadow: 0px 10px 20px rgba(35, 54, 87, 0.164);
+}
+
+.mysection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.mysection-top-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #e7681ef6;
+}
+
+.mysection-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+
+}
+
+.mysection-title::after {
+    content: "";
+    display: block;
+    margin: 10px auto;
+    height: 3px;
+    width: 5%;
+    background: #e9a178cb;
+}
+
+.site-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ========================
+Header Section
+=========================*/
+.navbar-brand {
+    /* display: inline; */
+}
+
+.navbar {
+    background-color: var(--white);
+    color: var(--blue-modern);
+    padding: 20px 0;
+}
+
+.navbar-nav .nav-item {
+    padding-right: 15px;
+    display: inline-block;
+
+}
+
+.navbar-nav .contact-item {
+    background: var(--blue-modern);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.navbar-nav .contact-item .contact-btn {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.navbar-nav .contact-item .contact-btn:hover {
+    box-shadow: 0px 10px 20px rgba(35, 54, 87, 0.164);
+
+}
+
+.nav-item .nav-link {
+    color: var(--blue-modern);
+    font-weight: 600;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-item .nav-link:hover {
+    background: #fafafa;
+}
+
+
+.dropdown-menu .dropdown-item {
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    background: var(--white);
+}
+
+.nav-item .contact-btn {
+    text-align: center;
+}
+
+/* ========================
+Hero Section
+=========================*/
+.carousel-inner {
+    position: relative;
+
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.carousel-inner .hero-img {
+    /* height: 200px; */
+}
+
+
+/* ========================
+About Section
+=========================*/
+
+.about-customer-data {
+    background: #c8d4e9;
+}
+
+.about-customer-data h3 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.about-customer-data span {
+    font-weight: 500;
+}
+
+
+/* ========================
+Advertise Section
+=========================*/
+.advertise {
+    background: var(--section-bg);
+}
+
+.advertise .advertise-img {
+    
+}
+
+.advertise .mysection-title::after {
+    content: "";
+    display: block;
+    margin: 10px 0;
+    height: 3px;
+    width: 10%;
+    background: #e9a178cb;
+}
+
+
+/* ========================
+Fleets Section
+=========================*/
+
+.fleet-card {
+    border-radius: 8px;
+    background: #f5f7fb;
+    padding-bottom: 20px;
+}
+
+.fleet-card:hover {
+    box-shadow: 5px 5px 45px #e4e6e9,
+        -5px -5px 45px #ffffff;
+}
+
+h5.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p.card-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* Luxury Fleet  */
+.fleet-product .p-price {
+    padding: 2px 6px;
+    border-radius: 5px;
+    background: var(--section-bg);
+    font-weight: 600;
+}
+
+.fleet-product button.p-btn {
+    border: 2px solid var(--blue-modern);
+    width: 100%;
+    transition: all .75 ease-in;
+
+}
+
+.fleet-product button.p-btn:hover {
+    background: var(--blue-modern);
+    color: var(--white);
+    box-shadow: 0px 10px 20px rgba(35, 54, 87, 0.164);
+
+}
+
+
+/* ========================
+Gallery Section
+=========================*/
+
+#gallery {
+    background: #c8d4e95b;
+}
+
+/* ========================
+FAQs Section
+=========================*/
+.accordion-item .accordion-header .accordion-button {
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: #c8d4e92f;
+    color: var(--blue-modern);
+}
+
+/* ========================
+Contact Us Section
+=========================*/
+.contact-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+
+.contact-bg .mysection-top-title {
+    color: var(--white);
+}
+
+.contact-bg .mysection-title {
+    color: var(--white);
+}
+
+.contact-bg .contact-btn {
+    color: var(--blue-modern);
+    background: var(--white);
+    border-radius: 5px;
+    padding: 12px 35px;
+    text-align: center;
+
+}
+
+.contact-bg .contact-btn:hover {
+    color: var(--blue-modern);
+    border: none;
+}
+
+/* ====== Contact form ====== */
+input.form-control {
+    padding: 10px;
+    font-size: 14px;
+
+}
+
+input.form-control:focus {
+    border: 1px solid #233657ab;
+    box-shadow: none;
+}
+
+textarea#message {
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+textarea#message:focus {
+    border: 1px solid #233657ab;
+    box-shadow: none;
+}
+
+/* ========================
+Intro Section
+=========================*/
+.intro-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.intro-overlay {
+    position: relative;
+}
+
+.intro-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 30vh;
+    width: 100%;
+    background: #000000;
+    opacity: .6;
+    z-index: 1;
+}
+
+.intro-section .intro-title {
+    z-index: 1;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.intro-section .intro-text {
+    z-index: 1;
+    color: var(--white);
+    font-size: 16px;
+}
+
+
+
+
+/* ========================
+Site Map Section
+=========================*/
+.site-map-img {
+    /* height: 100vh; */
+}
+
+
+
+/* ========================
+Footer Section
+=========================*/
+
+#footer {
+    background: var(--blue-modern);
+    color: var(--white);
+}
+
+#footer .mysection {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.my-footer p {
+    font-size: 15px;
+
+}
+
+.my-footer h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.my-footer h5::after {
+    position: absolute;
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 20%;
+    height: 3px;
+    background: var(--light-brown);
+
+}
+
+.my-footer .nav .nav-item .nav-link {
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.my-footer .nav .nav-item .nav-link:hover {
+    background: none;
+    color: var(--white);
+}
+
+.my-footer .nav .nav-item .nav-link i.fa-solid {
+    padding-right: 6px;
+}
+
+.footer-bottom-text p {
+    font-size: 15px;
+}
